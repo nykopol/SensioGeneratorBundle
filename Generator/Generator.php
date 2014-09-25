@@ -44,7 +44,8 @@ class Generator
      * Get the twig environment that will render skeletons
      * @return \Twig_Environment
      */
-    protected function getTwigEnvironment(){
+    protected function getTwigEnvironment()
+    {
         return new \Twig_Environment(new \Twig_Loader_Filesystem($this->skeletonDirs), array(
             'debug'            => true,
             'cache'            => false,
